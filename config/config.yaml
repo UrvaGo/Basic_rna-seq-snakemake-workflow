@@ -1,0 +1,4 @@
+samples: "samples.tsv"
+genome_index: "reference/hisat2/genome"
+gtf: "reference/genes.gtf"
+threads: 8

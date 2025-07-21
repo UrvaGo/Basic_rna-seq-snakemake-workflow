@@ -1,0 +1,13 @@
+name: rna_seq_env
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - fastqc
+  - trimmomatic
+  - hisat2
+  - samtools
+  - subread
+  - r-base
+  - r-deseq2
+  - snakemake
