@@ -50,47 +50,39 @@ rna_seq_pipeline/
 │   └── deseq2_analysis.R
 ├── samples.tsv
 └── Snakefile
-📄 Configuration
+
+##Configuration
 config/config.yaml:
 
-yaml
-Copy
-Edit
 samples: "samples.tsv"
 genome_index: "reference/hisat2/genome"
 gtf: "reference/genes.gtf"
 threads: 8
-samples.tsv:
 
-tsv
-Copy
-Edit
+##samples.tsv:
+
 sample	condition
 sample1	control
 sample2	control
 sample3	treated
 sample4	treated
-Running the Workflow
+
+##Running the Workflow
 Create conda environment:
 
-bash
-Copy
-Edit
 conda env create -f envs/rna_seq_env.yaml
 conda activate rna_seq_env
-Run the workflow:
 
-bash
-Copy
-Edit
+##Run the workflow:
+
 snakemake --cores 8
-Clean up intermediate files:
 
-bash
-Copy
-Edit
+##Clean up intermediate files:
+
 snakemake clean
-Output
+
+##Output
+
 Quality reports (results/fastqc)
 
 Trimmed reads (results/trimmed)
@@ -101,10 +93,10 @@ Gene counts (results/counts/gene_counts.txt)
 
 Differential expression results (results/deseq2/deseq2_results.csv)
 
-Citation
+##Citation
 If you use this pipeline, please cite the tools used (FastQC, Trimmomatic, HISAT2, featureCounts, DESeq2, Snakemake).
 
-Contact
+##Contact
 Developed by Urvashi Goswami
 Postdoctoral Researcher, Whitney Lab, University of Florida
 📧 goswamiurvashi12@gmail.com
