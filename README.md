@@ -5,12 +5,14 @@ This pipeline performs differential expression analysis for bulk RNA-seq data us
 1. Workflow Overview
 
 The workflow includes the following steps:
-1. **Quality Control**: FastQC
-2. **Trimming**: Trimmomatic
-3. **Alignment**: HISAT2
-4. **Conversion & Sorting**: SAM to BAM via Samtools
-5. **Quantification**: featureCounts
-6. **Differential Expression**: DESeq2
+A. **Quality Control**: FastQC
+B.  **Trimming**: Trimmomatic
+C.  **Alignment**: HISAT2
+D.  **Conversion & Sorting**: SAM to BAM via Samtools
+E.  **Quantification**: featureCounts
+F.  **Differential Expression**: DESeq2
+
+
 
 
 2. Installation
