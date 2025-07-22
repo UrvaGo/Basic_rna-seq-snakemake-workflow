@@ -2,7 +2,7 @@
 
 This pipeline performs differential expression analysis for bulk RNA-seq data using a Snakemake workflow. It processes raw FASTQ files through trimming, alignment, gene quantification, and DESeq2-based analysis.
 
-## Workflow Overview
+1. Workflow Overview
 
 The workflow includes the following steps:
 1. **Quality Control**: FastQC
@@ -13,10 +13,7 @@ The workflow includes the following steps:
 6. **Differential Expression**: DESeq2
 
 
-## Installation
-
-
-## 🔧 Installation
+2. Installation
 
 
 Make sure the following tools are installed (preferably via [conda](https://docs.conda.io/en/latest/)):
@@ -37,7 +34,7 @@ conda env create -f envs/rna_seq_env.yaml
 conda activate rna_seq_env
 ```
 
-## Directory Structure
+3. Directory Structure
 
 ```
 rna_seq_pipeline/
@@ -58,9 +55,8 @@ rna_seq_pipeline/
 ├── samples.tsv
 └── Snakefile
 ```
-##Configuration
 
-config/config.yaml:
+4. Configuration
 
 ```
 samples: "samples.tsv"
@@ -68,7 +64,8 @@ genome_index: "reference/hisat2/genome"
 gtf: "reference/genes.gtf"
 threads: 8
 ```
-##samples.tsv:
+5. samples.tsv
+
 ```
 sample	condition
 sample1	control
@@ -76,21 +73,23 @@ sample2	control
 sample3	treated
 sample4	treated
 ```
-##Running the Workflow
-Create conda environment:
+6. Running the Workflow
+   
+
 ```
+#Create conda environment:
 conda env create -f envs/rna_seq_env.yaml
 conda activate rna_seq_env
 ```
 ```
 snakemake --cores 8
 ```
-##Clean up intermediate files:
+7. Clean up intermediate files:
 ```
 snakemake clean
 ```
 
-##Output
+8. Output
 ```
 Quality reports (results/fastqc)
 
@@ -103,13 +102,8 @@ Gene counts (results/counts/gene_counts.txt)
 Differential expression results (results/deseq2/deseq2_results.csv)
 ```
 
-##Citation
-If you use this pipeline, please cite the tools used (FastQC, Trimmomatic, HISAT2, featureCounts, DESeq2, Snakemake).
-
 ## Contact
 ```
-Developed by **Urvashi Goswami**  
-Postdoctoral Researcher, Whitney Lab, University of Florida  
+Developed by **Urvashi Goswami**   
 📧 goswamiurvashi12@gmail.com  
-🔗 [GitHub: UrvaGo](https://github.com/UrvaGo)
 ```
