@@ -106,6 +106,6 @@ Differential expression results (results/deseq2/deseq2_results.csv)
 
 ## Contact
 ```
-Developed by **Urvashi Goswami**   
-📧 goswamiurvashi12@gmail.com  
+Developed by Urvashi Goswami  
+Email: goswamiurvashi12@gmail.com  
 ```
