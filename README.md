@@ -12,7 +12,12 @@ The workflow includes the following steps:
 5. **Quantification**: featureCounts
 6. **Differential Expression**: DESeq2
 
+
 ## Installation
+
+
+## 🔧 Installation
+
 
 Make sure the following tools are installed (preferably via [conda](https://docs.conda.io/en/latest/)):
 
@@ -26,6 +31,7 @@ Make sure the following tools are installed (preferably via [conda](https://docs
 - [Snakemake](https://snakemake.readthedocs.io/en/stable/) – workflow management system
 
 You can create a ready-to-use conda environment via:
+<<<<<<< HEAD
 ```bash
 conda env create -f envs/rna_seq_env.yaml
 conda activate rna_seq_env
@@ -33,6 +39,17 @@ conda activate rna_seq_env
 arduino
 Copy
 Edit
+=======
+
+```bash
+conda env create -f envs/rna_seq_env.yaml
+conda activate rna_seq_env
+```
+
+## 📁 Directory Structure
+
+```
+>>>>>>> Update README with improved formatting and installation section
 rna_seq_pipeline/
 ├── config/
 │   └── config.yaml
@@ -70,6 +87,7 @@ sample4	treated
 ##Running the Workflow
 Create conda environment:
 
+<<<<<<< HEAD
 conda env create -f envs/rna_seq_env.yaml
 conda activate rna_seq_env
 
@@ -80,15 +98,40 @@ snakemake --cores 8
 ##Clean up intermediate files:
 
 snakemake clean
+=======
+You can create a ready-to-use conda environment via:
+
+```bash
+conda env create -f envs/rna_seq_env.yaml
+conda activate rna_seq_env
+```
+
+Run the workflow:
+
+```bash
+snakemake --cores 8
+```
+
+Clean up intermediate files:
+
+```bash
+snakemake clean
+```
+>>>>>>> Update README with improved formatting and installation section
 
 ##Output
 
 Quality reports (results/fastqc)
 
+<<<<<<< HEAD
 Trimmed reads (results/trimmed)
+=======
+## 📚 Citation
+>>>>>>> Update README with improved formatting and installation section
 
 BAM alignment files (results/aligned)
 
+<<<<<<< HEAD
 Gene counts (results/counts/gene_counts.txt)
 
 Differential expression results (results/deseq2/deseq2_results.csv)
@@ -101,3 +144,11 @@ Developed by Urvashi Goswami
 Postdoctoral Researcher, Whitney Lab, University of Florida
 📧 goswamiurvashi12@gmail.com
 🔗 GitHub: UrvaGo
+=======
+## 📬 Contact
+
+Developed by **Urvashi Goswami**  
+Postdoctoral Researcher, Whitney Lab, University of Florida  
+📧 goswamiurvashi12@gmail.com  
+🔗 [GitHub: UrvaGo](https://github.com/UrvaGo)
+>>>>>>> Update README with improved formatting and installation section
